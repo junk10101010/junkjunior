@@ -9,12 +9,7 @@
                 <th>Numbers</th>
                 <th>Date</th>
             </tr>
-            <?php
-            $i = 1;
-            $query = "SELECT * FROM list ORDER BY id DESC";
-            $query = $conn->query($query);
-            while($row = $query->fetch_assoc()) {
-            ?>
+            
             <tr>
                 <td><?php echo $i; ?></td>
                 <td><?php echo $row['wordtxt']; ?></td>
